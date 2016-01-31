@@ -10,7 +10,6 @@ var bodyParser = require('body-parser');
 var app = express();
 
 require('dotenv').load();
-require('./app/config/passport')(passport);
 
 console.log(process.env);
 var mongoURI = process.env.MONGOLAB_URI || process.env.MONGO_URI;
